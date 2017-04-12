@@ -1,41 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dynamic Drive: CSS Liquid Layout #2.1- (Fixed-Fluid)</title>
-<link rel="stylesheet" href="css/main.css">
-<style type="text/css"></style>
-
-<script type="text/javascript">
-/*** Temporary text filler function. Remove when deploying template. ***/
-var gibberish=["This is just some filler text", "Welcome to Dynamic Drive CSS Library", "Demo content nothing to read here"]
-function filltext(words){
-for (var i=0; i<words; i++)
-document.write(gibberish[Math.floor(Math.random()*3)]+" ")
-}
-</script>
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GoAlolan Home</title>
+  <link rel="stylesheet" href="css/main.css">
+  <style type="text/css"></style>
 </head>
+
 <body>
-<div id="maincontainer">
+  <div id="maincontainer">
+    <div id="topsection">
+      <div class="innertube">
+        <h1>GoAlola!</h1>
+      </div>
+    </div>
 
-<div id="topsection"><div class="innertube"><h1>CSS Liquid Layout #2.1- (Fixed-Fluid)</h1></div></div>
+    <div id="contentwrapper">
+      <div id="contentcolumn">
+        <p>Welcome to GoAlolan! Looking for a new region to explore? How about visiting Alola!</p>
+        <p>This new region is home to many new Pokemon, people, and challenges! To learn more explore the tabs to the right!</p>
+      </div>
+    </div>
 
-<div id="contentwrapper">
-<div id="contentcolumn">
-<div class="innertube"><b>Content Column: <em>Fluid</em></b> <script type="text/javascript">filltext(45)</script></div>
-</div>
-</div>
+    <div id="leftcolumn">
+      <nav>
+	       <ul>
+    	      <li><a href="index.html">Home</a></li>
+    	      <li><a href="island_challenge.html">Island Challenge</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+    	      <li><a href="islands.html">Islands</a></li>
+        <li><a href="#">Pokemon</a></li>
+        	<ul>
+            	<li><a href="#">Newly Discovered</a></li>
+                <li><a href="#">Alolan Varients</a></li>
+                <li><a href="#">Tapu</a></li>
+                <li><a href="#">NEW! Ultra Beasts</a></li>
+            </ul>
+        <li><a href="people.html">People</a></li>
+            <li><a href="#">About Us</a></li>
+    	      <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Sources</a></li>
+          </ul>
+        </nav>
+      </div>
 
-<div id="leftcolumn">
-<div class="innertube"><b>Left Column: <em>200px</em></b> <script type="text/javascript">filltext(15)</script></div>
-
-</div>
-
-<div id="footer"><a href="http://www.dynamicdrive.com/style/">Dynamic Drive CSS Library</a></div>
-
-</div>
-
+      <div id="footer"><a href="http://www.pokemon-sunmoon.com/en-au/">Pokemon Sun And Moon</a>
+      </div>
+    </div>
 </body>
 </html>

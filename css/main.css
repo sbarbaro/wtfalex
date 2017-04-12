@@ -1,72 +1,83 @@
-body{
-margin:0;
-padding:0;
-line-height: 1.5em;
+body {
+	margin:0;
+	padding:0;
+	line-height: 1.5em;
+	font-family: sans-serif;
 }
 
-b{font-size: 110%;}
-em{color: red;}
+b { font-size: 110%; }
+em { color: red; }
 
-
-#topsection{
-background: #EAEAEA;
-height: 90px; /*Height of top section*/
+ul * {
+	text-decoration: none;
 }
 
-#topsection h1{
-margin: 0;
-padding-top: 15px;
+li ~ ul {
+	margin-left: -1.5em;
 }
 
-#contentwrapper{
-float: left;
-width: 100%;
+#topsection {
+	background-color: #238AC6;
+	height: 110px; /*Height of top section*/
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
 }
 
-#contentcolumn{
-margin-left: 200px; /*Set left margin to LeftColumnWidth*/
+#topsection h1 {
+	margin: 0;
+	padding-top: 40px;
+	padding-left: 40px;
 }
 
-#leftcolumn{
-float: left;
-width: 200px; /*Width of left column*/
-margin-left: -100%;
-background: #C8FC98;
+#contentwrapper {
+	float: left;
+	width: 100%;
 }
 
-#footer{
-clear: left;
-width: 100%;
-background: black;
-color: #FFF;
-text-align: center;
-padding: 4px 0;
+#contentcolumn {
+	margin-left: 215px; /*Set left margin to LeftColumnWidth*/
+	margin-right: 15px;
 }
 
-#footer a{
-color: #FFFF80;
+#leftcolumn {
+	float: left;
+	width: 200px; /*Width of left column*/
+	margin-left: -100%;
+	background: #C8FC98;
 }
 
-.innertube{
-margin: 10px; /*Margins for inner DIV inside each column (to provide padding)*/
-margin-top: 0;
+#footer {
+	clear: left;
+	width: 100%;
+	background: black;
+	color: #FFF;
+	text-align: center;
+	padding: 4px 0;
+}
+
+#footer a {
+	color: #FFFF80;
+}
+
+.innertube {
+	margin: 10px; /*Margins for inner DIV inside each column (to provide padding)*/
+	margin-top: 0;
 }
 
 /* ####### responsive layout CSS ####### */
 
-@media (max-width: 600px){ /* responsive layout break point */
+@media (max-width: 600px) { /* responsive layout break point */
 
-	#contentwrapper{
-	float: none;
+	#contentwrapper {
+		float: none;
 	}
 
-	#leftcolumn{
-	float: none;
-	width: 100%;
-	margin-left: 0;
+	#leftcolumn {
+		float: none;
+		width: 100%;
+		margin-left: 0;
 	}
 
-	#contentcolumn{
-	margin-left: 0;
+	#contentcolumn {
+		margin-left: 0;
 	}
 }
