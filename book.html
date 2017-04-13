@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GoAlolan Booking</title>
+    <link rel="stylesheet" href="css/main.css">
+    <style type="text/css"></style>
+</head>
+
+<body>
+    <div id="maincontainer">
+        <div id="topsection">
+            <div class="innertube">
+                <h1>Booking</h1>
+            </div>
+        </div>
+
+        <div id="contentwrapper">
+            <div id="contentcolumn">
+              <p>The Alola Tourist Bureau offers tours starting in June and ending is August starting from 9:00 am to 10:00 pm. To make reservations please fill out the form below:</p>
+              <form id="form1" name="form1" method="post">
+                <p>
+                  <label for="textfield">Name:</label>
+                  <input name="textfield" type="text" required id="textfield" form="form1">
+                </p>
+                <p>
+                  <label for="number">Number of Tourists:</label>
+                  <input name="number" type="number" id="number" form="form1" max="10" min="1">
+                </p>
+                <p>
+                  <label for="email2">Email:</label>
+                  <input name="email2" type="email" required id="email2" form="form1">
+                </p>
+                <p>
+                  <label for="date">Starting Date:</label>
+                  <input name="date" type="date" required id="date" form="form1" max="2017-08-31" min="2017-06-01">
+                </p>
+                <p>
+                  <label for="date2">Ending Date:</label>
+                  <input name="date2" type="date" required id="date2" form="form1" max="2017-08-31" min="2017-06-01">
+                </p>
+                <p>
+                  <input name="submit2" type="submit" id="submit2" formaction="accept.html" value="Submit">
+                </p>
+              </form>
+            </div>
+        </div>
+
+        <div id="leftcolumn">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="island_challenge.html">Island Challenge</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="islands.html">Islands</a></li>
+                    <li><a href="pokemon.html">Pokemon</a></li>
+                    <ul>
+                        <li><a href="new.html">Newly Discovered</a></li>
+                        <li><a href="varients.html">Alolan Varients</a></li>
+                        <li><a href="tapu.html">Guardian Deities</a></li>
+                        <li><a href="ultra_beasts.html">NEW! Ultra Beasts</a></li>
+                    </ul>
+                    <li><a href="people.html">People</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="book.html">Booking</a></li>
+                    <li><a href="sources.html">Sources</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="footer"><a href="http://www.pokemon-sunmoon.com/en-au/">Pokemon Sun And Moon</a>
+        </div>
+    </div>
+</body>
+
+</html>
